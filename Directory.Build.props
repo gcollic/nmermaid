@@ -1,0 +1,27 @@
+<Project>
+    <PropertyGroup>
+        <Product>Nmermaid</Product>
+        <Copyright>Guillaume Collic - $([System.DateTime]::Now.Year)</Copyright>
+        <AssemblyName>$(MSBuildProjectName)</AssemblyName>
+        <RootNamespace>$(AssemblyName)</RootNamespace>
+        <Nullable>enable</Nullable>
+        <DebugType>embedded</DebugType>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <EnableNETAnalyzers>true</EnableNETAnalyzers>
+        <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+        <CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="Roslynator.Analyzers" Version="4.*">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+</Project>

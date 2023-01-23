@@ -1,0 +1,133 @@
+# Supprimer la ligne ci-dessous si vous voulez hériter les paramètres .editorconfig des répertoires supérieurs
+root = true
+
+[*]
+indent_style=space
+charset=utf-8
+end_of_line=crlf
+
+# Fichiers C#
+[*.cs]
+
+#### Options EditorConfig principales ####
+
+# Indentation et espacement
+indent_size = 4
+indent_style = space
+trim_trailing_whitespace = true
+
+# Préférences de nouvelle ligne
+end_of_line = crlf
+insert_final_newline = false
+
+#### Conventions de codage .NET ####
+
+# Organiser les instructions Using
+dotnet_separate_import_directive_groups = false
+dotnet_sort_system_directives_first = false
+file_header_template = 
+
+
+# Préférences de champ
+dotnet_style_readonly_field = true:suggestion
+
+# Préférences de paramètre
+dotnet_code_quality_unused_parameters = all:suggestion
+
+#### Conventions de codage C# ####
+
+# Préférences correspondants au modèle
+csharp_style_pattern_matching_over_as_with_null_check = true:suggestion
+csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
+csharp_style_prefer_switch_expression = true:suggestion
+
+# Préférences de bloc de code
+csharp_prefer_braces = true:suggestion
+csharp_prefer_simple_using_statement = true:suggestion
+
+# Line Wrapping
+max_line_length = 160
+wrap_parameters_style = chop_if_long
+wrap_before_declaration_lpar = false
+wrap_after_declaration_lpar = true
+wrap_arguments_style = chop_if_long
+wrap_before_invocation_lpar = false
+wrap_after_invocation_lpar = true
+wrap_before_comma = false
+wrap_before_arrow_with_expressions = false
+wrap_after_dot_in_method_calls = false
+wrap_chained_method_calls = chop_if_long
+wrap_before_extends_colon = true
+wrap_extends_list_style = wrap_if_long
+wrap_for_stmt_header_style = chop_if_long
+wrap_before_ternary_opsigns = true
+wrap_ternary_expr_style = chop_if_long
+wrap_linq_expressions = chop_if_long
+wrap_before_binary_opsign = true
+wrap_chained_binary_expressions = true
+force_chop_compound_if_expression = false
+force_chop_compound_while_expression = false
+force_chop_compound_do_expression = false
+wrap_multiple_type_parameer_constraints_style = chop_if_long
+wrap_object_and_collection_initializer_style = chop_if_long #check
+wrap_array_initializer_style = chop_if_long #check
+wrap_before_first_type_parameter_constraint = true
+wrap_before_type_parameter_langle = false
+
+# Préférences de niveau expression
+csharp_prefer_simple_default_expression = true:suggestion
+csharp_style_deconstructed_variable_declaration = true:suggestion
+csharp_style_inlined_variable_declaration = true:suggestion
+csharp_style_pattern_local_over_anonymous_function = true:suggestion
+csharp_style_prefer_index_operator = true:suggestion
+csharp_style_prefer_range_operator = true:suggestion
+csharp_style_throw_expression = true:suggestion
+csharp_style_unused_value_assignment_preference = discard_variable:warning
+csharp_style_unused_value_expression_statement_preference = discard_variable:silent
+
+# Préférences pour la directive 'using'
+csharp_using_directive_placement = outside_namespace:silent
+
+#### Règles de formatage C# ####
+
+# Préférences d'enveloppement
+csharp_preserve_single_line_blocks = true
+csharp_preserve_single_line_statements = true
+
+#### Styles de nommage ####
+
+# Règles de nommage
+
+dotnet_naming_rule.interface_should_be_begins_with_i.severity = suggestion
+dotnet_naming_rule.interface_should_be_begins_with_i.symbols = interface
+dotnet_naming_rule.interface_should_be_begins_with_i.style = begins_with_i
+
+dotnet_naming_rule.types_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.types_should_be_pascal_case.symbols = types
+dotnet_naming_rule.types_should_be_pascal_case.style = pascal_case
+
+dotnet_naming_rule.non_field_members_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.non_field_members_should_be_pascal_case.symbols = non_field_members
+dotnet_naming_rule.non_field_members_should_be_pascal_case.style = pascal_case
+
+dotnet_naming_rule.private_field_members_should_be_camel_case.severity = suggestion
+dotnet_naming_rule.private_field_members_should_be_camel_case.symbols = private_field_members
+dotnet_naming_rule.private_field_members_should_be_camel_case.style = camel_case
+
+dotnet_naming_rule.private_static_field_members_should_be_pascal_case.severity = suggestion
+dotnet_naming_rule.private_static_field_members_should_be_pascal_case.symbols = private_static_field_members
+dotnet_naming_rule.private_static_field_members_should_be_pascal_case.style = pascal_case
+
+
+
+# ReSharper properties
+resharper_wrap_array_initializer_style = chop_if_long
+
+# Analysis rules
+
+# IDE0051: Supprimer les membres privés non utilisés
+dotnet_diagnostic.IDE0051.severity = suggestion
+
+[*.feature.cs]
+generated_code = true
+dotnet_analyzer_diagnostic.severity = none

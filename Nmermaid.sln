@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32210.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nmermaid", "Nmermaid\Nmermaid.csproj", "{C2049678-6A2E-4BE6-878C-C00F6EDB5157}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nmermaid.DocAsTests", "Nmermaid.DocAsTests\Nmermaid.DocAsTests.csproj", "{E0380C1B-2A20-4E61-BAEF-7A6812C04C69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2049678-6A2E-4BE6-878C-C00F6EDB5157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2049678-6A2E-4BE6-878C-C00F6EDB5157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2049678-6A2E-4BE6-878C-C00F6EDB5157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2049678-6A2E-4BE6-878C-C00F6EDB5157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0380C1B-2A20-4E61-BAEF-7A6812C04C69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0380C1B-2A20-4E61-BAEF-7A6812C04C69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0380C1B-2A20-4E61-BAEF-7A6812C04C69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0380C1B-2A20-4E61-BAEF-7A6812C04C69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03b08b95-11e2-4521-9910-4c8156c28d9a}
+	EndGlobalSection
+EndGlobal
