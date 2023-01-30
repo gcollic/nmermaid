@@ -2,6 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <PackageProjectUrl>https://github.com/gcollic/nmermaid/blob/main/README.md</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/gcollic/nmermaid</RepositoryUrl>
+    <PackageTags>mermaid</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
